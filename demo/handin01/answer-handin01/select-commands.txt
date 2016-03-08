@@ -1,0 +1,1 @@
+sqlite> SELECT LicenseNumber, Make, Color from cars where Make='Ford' and Color='Silver' ORDER BY LicenseNumber DESC;

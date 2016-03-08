@@ -1,0 +1,9 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE cars (Make text,Color text, LicenseNumber 
+text primary key);
+INSERT INTO "cars" VALUES('Volvo','Grey','AAA 111');
+INSERT INTO "cars" VALUES('Honda','Blue','ABC 124');
+INSERT INTO "cars" VALUES('Porsche','Yellow','BBC 666');
+INSERT INTO "cars" VALUES('Ferrari','Red','FST 667');
+COMMIT;

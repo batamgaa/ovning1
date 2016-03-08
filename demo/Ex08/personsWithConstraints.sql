@@ -1,0 +1,11 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE persons (LastName text, FirstName text, Born text, Sex text);
+INSERT INTO "persons" VALUES('Nilsson','Tommy','1960-03-11','Man');
+INSERT INTO "persons" VALUES('Norum','John','1964-02-23','Man');
+INSERT INTO "persons" VALUES('Jett','Joan','1958-09-22','Woman');
+INSERT INTO "persons" VALUES('Wilson','Ann','1950-06-19','Woman');
+INSERT INTO "persons" VALUES('Doe','Jane','11/09/14','Female');
+CREATE TABLE persons2(LastName text, FirstName text, Born DATETIME check(Born IS datetime(Born)), Sex text CHECK( Sex IN ('Woman','Man')));
+INSERT INTO "persons2" VALUES('Joplin','Janis','1943-01-19 00:00:00','Woman');
+COMMIT;

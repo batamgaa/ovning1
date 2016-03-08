@@ -1,0 +1,1 @@
+sqlite> select * from cars where Make='Chevrolet' and Color='Red' and LicenseNumber like '%5';  sqlite> update cars set Color='Pink' where Make='Chevrolet' and Color='Red' and LicenseNumber like '%5';
